@@ -1,0 +1,72 @@
+{
+  "intents": [
+    {
+      "tag": "arithmetic",
+      "patterns": ["3+7/2", "1/4 - 3x6 - 4", "(3/4) + 5 - 1/3","3/4 + 1/3","3/4 + 7.3", "8 - (1/3)", "1.4 X 7/2", "3/5 + 7.2 - 3","20 - 6.8", "3/5 * 23 - 2", "34 - 78/234", "1 + 1/2", " 1 + 8.4 + 7.3", "log 5", "sin 30", "sin sin 45", "tan 45", "log log 10", "log 2345 to the base 2", "whats log 10 to the base 2", "log of 64 to base 10", "tan 30", "cos cos 60", "cos of 72"],
+      "responses": ["Solved answer"]
+    },
+    {
+      "tag": "polynomial",
+      "patterns": ["2x3 + x2 - 5x", "5x squared + 3x3 + 17", "z cubed + 2x2 -10", "x squared - 5x4 + 3", "solve the polynomial 4x3 -x +2", "3x2 -7 +4x3 + x6", "x3+x+1", "2x5 - x4 + 6", "x4+ x2-z-23"],
+      "responses": ["Solved answer"],
+      "context_set": "polynomial"
+    },
+    {
+      "tag": "linearequations",
+      "patterns": ["12x+5y = 12 and 4x - 1y - 4 = 0", "1x + 1y =112  and 2x - 3y - 9 = 0",  "x + 3y = 2 and 2x + 10y - 11 = 0", "2x - 7y = 12 and 7x + y - 1 = 0", "-x + 2y - 3 = 0 & 3x + 4y - 11 = 0", "x + 2y - 7 = 0 , 2x - 5y = -12", "8x + 7y =38 and 3x - 5y= -1", "solve 2x + 4 =y and 3x + 2 = y", "solve 8x + 7y = 38 and 3x - 5y = -1", "solve 2x + y = 8 and -3x + 5y = -2",
+      "solve the equation 2x + y = 8 & -3x + 5y = -2", "solve the linear equation x + 3y = 2 and 2x + 10y - 11 = 0", "solve equations 1x + 1y =112  and  2x - 3y - 9 = 0", "solve 1x + 1y =112  and 2x - 3y - 9 = 0", "2x + 3y = – 6 & 5x – 7y = – 9", "solve the linear equations 2x + y = 8 & -3x + 5y = -2", "solve the linear equations 2x + y = 8 and -3x + 5y = -2"],
+      "responses": ["Solved answer"],
+      "context_set": "linearequations"
+    },
+    {
+      "tag": "percentages",
+      "patterns": ["5% of 3500","37% out of 2000", "I would like to calculate percentages", "what is 5% of 200", "from 2000 what is 20%","what % is 25 out of 200","how much percentage is 3 out of 50", "calculate percentage of 418 out of 766", "The price of a pair of trousers was decreased by 22% to $30. What was the original price of the trousers?",
+      "The original price of a shirt was $20. It was decreased to $15 . What is the percent decrease of the price of this shirt.", "Some cost increased from 300 to 450. What is the % increase in cost?", "whats 4% of 2000", "72 % of 234567"],
+      "responses": ["Solved answer"]
+    },
+    {
+      "tag": "permutation",
+      "patterns": ["In how many different ways can you arrange letters of the WORD ROCK", "given letters of the WORD BLADE in how many unique ways can you arrange the letters", "In how many ways can the letters of the word 'LEADER' be arranged","Find out how many distinct three-digit numbers can be formed using all the digits of 1, 2, and 3", " In how many different ways can five friends sit for a photograph of five chairs in a row?", "From among the 36 students in a class, one leader and one class representative are to be appointed. In how many ways can this be done", "In how many different ways can I arrange letters of the word LEADER", "In how many distinct ways can I arrange letters of the word PERCUSSION","how many different ways I can arrange digits 1,2,3,4",
+      "how many 3 digit numbers can be formed from the digits 5,6,7,8,9", "how many 4 digit numbers can be formed from numbers 3,4,5,6,7,8,9", "from among the 36 students in a class, 1 leader and 1 class representative are to be appointed. In how many ways can this be done?",
+      "how many ways can I arrange 10 men in a line"],
+      "responses": ["Solved answer"],
+      "context_set": "permutation"
+    },
+    {
+      "tag": "combination",
+      "patterns": ["from group of 6 men and 4 women how can you choose a group of 5 guys. How many committees are possible", "from a group of 6 men and 4 women how can you form a committee of 3 men and 2 women",
+      "from group of 7 men  4 women how many groups of 5 guys", "if we have a group of 6 men  and 4 women how many ways can you form a committee of 5 people" , "how many groups of 5 cards can be selected from a pack of 52 cards",
+    "how many ways can 5 players be chosen from 8 players", "how many choices of 10 people can I make from 25 people"],
+      "responses": ["Solved answer"],
+      "context_set": "combination"
+    },
+    {
+      "tag": "interest",
+      "patterns": ["what will be the compound interest on a sum of Rs. 7500 after 2 years at the rate of 4 % annually", "find the compound interest on Rs. 7500 at 4% per annum for 2 years, compounded annually",
+      "find the principal that amounts to Rs. 4913 in 3 years at 6.25 % per annum  compounded annually", "a sum of USD 25,000 is deposited for 2 years at an interest rate of 3%  quarterly what is the final amount",
+    "find the simple interest on Rs. 68,000 at 16.3% per annum for a period of 9 months", "whats the simple interest on USD 9424.50 at 5.2% p.a for 2 years", "if you deposit an  4000 into an for 5 years at 6% compounded quarterly how much final amount will I get",
+    "sum of USD 25,000 is deposited at  rate of 3% for 2 years  what is the final amount", "a sum of USD 25,000 is deposited for 24 months at an interest rate of 3%  quarterly what is the final amount",
+    " find the principal that amounts to Rs. 4913 in 3 years at 6.25 % per annum  compounded annually ", "compound interest on 4500 invested for 2 yrs at the rate of 3% p.a. compounded half yearly"],
+      "responses": ["Solved answer"],
+      "context_set": "interest"
+    },
+    {
+      "tag": "statistics",
+      "patterns": ["find the 85th percentile of {95, 88, 70, 75, 83, 70, 66, 91, 68, 76, 82}", "what percentile is 102 from 98, 99, 99, 100, 101, 102, 104, 104, 105, 105, 107, 110, 112, 112","frequency distribution for results 1,2,3,4,5,5,6 ",
+    "whats the mean  of  the numbers 1,2,3,4 567", "find the frequency table of 4, 3, 6, 5, 2, 4, 3, 3, 6, 4, 2, 3, 2, 2, 3, 3, 4, 5, 6, 4, 2, 3, 4", "construct the group frequency distribution for 20, 6, 23, 19, 9, 14, 15, 3, 1, 12, 10, 20, 13, 3, 17, 10, 11, 6, 21, 9, 6, 10, 9, 4, 5, 1, 5, 11, 7, 24 with class intervals of 5",
+    "calculate  standard deviation of the sequence 100, 121, 123, 145, 151.", "whats the median  of the numbers 42, 51, 62, 47, 38, 50, 54, 44", "whats the average of 3,4,5,6 7 67 56", "find the mean of the numbers 45, 67, 34, 23, 56", "what is standard deviation of 100, 121, 123, 145, 151", "whats the variance of the numbers 1.2, 12.5, 10.1, 20.3, 13,  5.5, 11, 7 ", "variance of series 12. 34, 23, 90, 45",
+    "standard deviation of 1211, 2983, 4100, 1000, 122 "],
+      "responses": ["Solved answer"],
+      "context_set": "statistics"
+    },
+    {
+      "tag": "trigonometry",
+      "patterns": ["find area of triangle with base 10 and height 12", "what is the area of an equilateral triangle with length of side 20","find the side of a right triangle if length of one side is 20 and measure of the opposite angle is 30",
+    "find the hypotenuse of a right angled triangle with side 10 cms and one of its angle is 30 degrees", "if area of an isosceles triangle is 300 what is length of its side if the base is 20", "whats side of a right triangle if the length of other side is 55 feet and measure of an angle opposite that is 67.3 degrees",
+    "whats hypotenuse of a right triangle if the length of one side is 3 and measure of the angle adjacent to that side is 30", "whats angle of a right triangle if the length of one side is 23 feet and measure of the other side  is 55 ft",
+    "find the side of a right triangle when length of other side is 300 feet and the angle opposite the side is 30"],
+      "responses": ["Solved answer"],
+      "context_set": "trigonometry"
+    }
+  ]
+}

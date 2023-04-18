@@ -1,0 +1,12 @@
+__pycache__/
+build
+dist
+math-env
+.env
+.out
+*.pyc
+*.swp
+models
+.config
+.dockerenv
+.space
