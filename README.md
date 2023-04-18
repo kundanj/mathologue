@@ -5,25 +5,27 @@ This project is based on a dual step chat processing where each question is pass
 2) a  rules based pipeline of further dissection of questions using either regex or NLP (Spacy dependency parsing or Spacy rules based matching).
 
 ## Install
-pip install --upgrade pip \
-pip3 install -r requirements.txt
+`pip install --upgrade pip`
+
+`pip3 install -r requirements.txt`
 
 ## Create and activate virtual env
-python -m venv math-env \
-source ./math-env/bin/activate
+`python -m venv math-env` 
+
+`source ./math-env/bin/activate`
 
 ## Train the Model
-python src/ml/train.py
+`python src/ml/train.py`
 
 ## PreBuild/test command line
-python src/test_predict.py 
+`python src/test_predict.py`
 refer sample questions in test_predict.py to determine what questions are answerable by the bot
 
 ## Build
 on local:
-uvicorn --app-dir src main:app --reload
+`uvicorn --app-dir src main:app --reload`
 or
-python3 -m uvicorn --app-dir src main:app --reload
+`python3 -m uvicorn --app-dir src main:app --reload`
 
 ## Deployment
 To deploy on heroku/AWS follow Docker build and deploy:
